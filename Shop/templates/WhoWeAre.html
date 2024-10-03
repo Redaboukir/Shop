@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Alignement en haut pour éviter le débordement */
+            height: 100vh;
+            overflow: auto; /* Permet le défilement si nécessaire */
+            animation: backgroundAnim 15s infinite alternate;
+            padding: 20px; /* Padding général pour éviter que le contenu touche les bords */
+        }
+
+        @keyframes backgroundAnim {
+            0% { background: linear-gradient(135deg, #1e3c72, #2a5298); }
+            100% { background: linear-gradient(135deg, #2a5298, #1e3c72); }
+        }
+
+        .container {
+            max-width: 800px; /* Largeur maximale du conteneur */
+            width: 100%; /* Prise en charge de la largeur d'écran */
+            border-radius: 15px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            padding: 30px; /* Padding interne */
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        h1 {
+            margin-bottom: 30px; /* Espace sous le titre */
+            font-size: 32px; /* Taille du titre */
+            color: #00bcd4;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 20px; /* Padding des cartes */
+            margin: 15px 0; /* Espace entre les cartes */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .card:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-5px);
+        }
+
+        .icon {
+            font-size: 60px; /* Taille des icônes */
+            color: #00bcd4;
+            display: block;
+            margin: 0 auto 15px;
+            transition: transform 0.3s;
+        }
+
+        .icon:hover {
+            transform: rotate(20deg);
+        }
+
+        h2 {
+            margin: 15px 0; /* Espace autour des sous-titres */
+            font-size: 24px; /* Taille des sous-titres */
+            color: #fff;
+        }
+
+        p {
+            margin: 10px 0; /* Espace autour des paragraphes */
+            font-size: 16px; /* Taille du texte */
+            line-height: 1.5; /* Hauteur de ligne pour la lisibilité */
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 24px; /* Ajustement pour mobile */
+            }
+
+            .card {
+                padding: 15px; /* Réduction du padding sur mobile */
+            }
+
+            .icon {
+                font-size: 40px; /* Ajustement de la taille des icônes sur mobile */
+            }
+        }
+    </style>
+    <title>Qui Suis-Je</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Qui Suis-Je</h1>
+        
+        <div class="card">
+            <i class="fas fa-user-circle icon"></i>
+            <h2>À propos de moi</h2>
+            <p>
+                Bonjour ! Je suis <strong>Boukir Reda</strong>, un jeune passionné du développement web âgé de 21 ans. Actuellement étudiant à l'École Supérieure d'Ingénierie en Sciences Appliquées (ESISA) à Fès, Maroc, je me consacre à l'acquisition de compétences techniques qui me permettent de transformer des idées en solutions concrètes.
+            </p>
+            <p>
+                Mon parcours académique m’a permis d’explorer divers domaines liés à l'ingénierie et à la technologie, renforçant ainsi ma capacité à aborder des projets sous différents angles. J’ai toujours eu une fascination pour les nouvelles technologies et comment elles peuvent être utilisées pour améliorer notre quotidien.
+            </p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-bullseye icon"></i>
+            <h2>Mon Objectif</h2>
+            <p>
+                Mon objectif principal est de créer des sites web dynamiques et esthétiques qui répondent aux besoins des entreprises, qu'elles soient en phase de démarrage ou déjà bien établies.
+            </p>
+            <p>
+                Je m’efforce d’apporter une valeur ajoutée à chaque projet en analysant soigneusement les besoins spécifiques de mes clients et en concevant des solutions sur mesure.
+            </p>
+        </div>
+
+        <div class="card">
+            <i class="fas fa-star icon"></i>
+            <h2>Pourquoi choisir mon produit</h2>
+            <p>
+                En choisissant mes produits, vous optez pour la qualité, l'innovation et une approche personnalisée. Je mets un point d'honneur à m'assurer que chaque site que je développe est non seulement esthétiquement agréable, mais aussi optimisé pour la performance et l'expérience utilisateur.
+            </p>
+            <p>
+                Je prends le temps de comprendre les objectifs de mes clients et de collaborer étroitement avec eux tout au long du processus de développement.
+            </p>
+        </div>
+        <a class="go-back" href="/">⬅️ Retour à l'accueil</a>
+    </div>
+</body>
+</html>

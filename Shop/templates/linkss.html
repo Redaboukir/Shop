@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .container:hover {
+            transform: scale(1.02); /* Effet d'agrandissement au survol */
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            font-size: 28px; /* Taille du titre */
+            color: #00bcd4;
+            text-transform: uppercase; /* Texte en majuscule */
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+
+        .social {
+            width: 48px;
+            height: 48px;
+            transition: transform 0.3s;
+        }
+
+        .social:hover {
+            transform: scale(1.1); /* Effet de zoom sur les icônes */
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold; /* Texte en gras */
+        }
+
+        .go-back {
+            margin-top: 20px;
+            display: inline-block;
+            text-decoration: none;
+            color: #00bcd4;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+
+        .go-back:hover {
+            transform: scale(1.1); /* Effet de zoom sur le lien */
+        }
+
+        @media (max-width: 600px) {
+            .social {
+                width: 36px; /* Ajustement pour mobile */
+                height: 36px; /* Ajustement pour mobile */
+            }
+
+            h2 {
+                font-size: 24px; /* Ajustement pour mobile */
+            }
+
+            p {
+                font-size: 16px; /* Ajustement pour mobile */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Trouvez-Moi</h2>
+        <div class="social-links">
+            <a href="https://www.instagram.com/redaboukirr/" target="_blank" aria-label="Instagram">
+                <img class="social" src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+            </a>
+            <a href="mailto:redaboukir45@gmail.com" target="_blank" aria-label="Gmail">
+                <img class="social" src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Gmail">
+            </a>
+            <a href="https://www.linkedin.com/in/reda-boukir-929463330/" target="_blank" aria-label="LinkedIn">
+                <img class="social" src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt="LinkedIn">
+            </a>
+            <a href="https://web.facebook.com/profile.php?id=61550781021779" target="_blank" aria-label="Facebook">
+                <img class="social" src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="Facebook">
+            </a>
+        </div>
+        <p>Téléphone : +212 616224336</p>
+
+        <!-- Lien pour revenir à la page d'accueil -->
+        <a class="go-back" href="/">⬅️ Retour à l'accueil</a>
+    </div>
+</body>
+
+</html>
